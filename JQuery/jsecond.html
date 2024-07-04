@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>add demo</title>
+  <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+</head>
+<body>
+<div id="hidethis">
+	<div class="odd">Hello World 1</div>
+	<div class="even fonteven">Hello World 2</div>
+	<div class="odd">Hello World 3</div>
+	<div class="even fonteven even1 even2 " id="hello4">Hello World 4</div>
+	<div class="odd" id="hello5">Hello World 5</div>
+	<div class="even even1" >Hello World 6</div>
+	<div class="odd" id="hello7">Hello World 7</div>
+	<div class="even even2" id="hello8">Hello World 8</div>
+	<div class="odd" id="hello9">Hello World 9</div>
+	<div class="even">Hello World 10</div>
+	
+</div>
+<div><button id="bthellohide">HELLO HIDE</button></div>
+<div><button id="bthelloshow">HELLO SHOW</button></div>
+ 
+<script>
+	$("#bthellohide").on("click",function(){
+		$("#hidethis").hide();
+	})
+	
+	$("#bthellos").on("click",function(){
+		$("#hidethis").show();
+	})
+	
+	$( ".odd" ).css( "background", "yellow" );
+	$( ".odd" ).css( "color", "white" );
+	$( ".odd" ).css( "font-size", "30px" );
+	$( ".even" ).css( "background", "green" );
+	$( ".fonteven" ).css( "font-size", "20px" );
+	$( "#hello5" ).css( "background", "purple" );
+	$( "#hello5" ).css( "font-style", "italic" );
+	$( "#hello5" ).css( "background", "purple" );
+	$( "#hello7" ).css( "background", "orange" );
+	$( "#hello9" ).css( "background", "black" );
+	$( "#hello8" ).empty();
+	$( "#hello8" ).append("Boardmarker 8");
+	$( "#hello8" ).css( "font-size", "30px" );
+	$( ".even1" ).css( "color", "white" );
+	$( ".even2" ).css( "font-style", "italic" );
+	$( "#hello4" ).empty();
+	$( "#hello4" ).append("<div id='remote4'>Boardmarker 4</div>");
+	$( "#remote4" ).empty();
+	$( "#remote4" ).append("<div id='remote4'>Remote 4</div>");
+	$( "#remote4" ).css( "color", "yellow" );
+	var remote4 = $("#remote4").text(); 
+	remote4 = remote4+' Success';
+	$("#remote4").text(remote4);
+	
+	var lemon= $("#hello7").text(); 
+	lemon = lemon+' Lemon';
+	$("#hello7").text(lemon);
+
+</script>
+ 
+</body>
+</html>	

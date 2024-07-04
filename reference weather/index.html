@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hi Weather</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+        #back-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            border: white;
+            background-color: #fb8343;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #888;
+            cursor: pointer;
+        }
+        
+        #back-btn:hover {
+            background-color: #ddd;
+        }
+    </style>
+
+    <!-- <div class="gambar">
+    <img src="assets/bingung.png" alt="gambar">
+  </div> -->
+
+
+    <div class="logo">
+        <img src="assets/HI Weather long.png" alt="Logo">
+    </div>
+
+</head>
+
+<body>
+    <button id="back-btn" onclick="goBack()">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+
+
+    </head>
+
+    <body>
+        <div class="main">
+            <div class="container">
+                <div class="header">
+                    <div class="search-box">
+                        <input type="text" placeholder="Masukkan lokasi yang ingin dicari" class="input-box" />
+
+                        <button class="fa-solid fa-magnifying-glass" id="searchBtn"></button>
+                    </div>
+                </div>
+
+                <div class="location-not-found">
+                    <h1>MAAF, Lokasi Tidak Ditemukan!!!</h1>
+                    <img src="assets/404.png" alt="404 Error" />
+                </div>
+
+                <div class="weather-body">
+                    <img src="assets/cloud.svg" alt="Weather Image" class="weather-img" />
+
+                    <div class="weather-box">
+                        <p class="temperature">0 <sup>°C</sup></p>
+                        <p class="description">Hujan Ringan</p>
+                    </div>
+
+                    <div class="weather-details">
+                        <div class="humidity">
+                            <i class="fa-sharp fa-solid fa-droplet"></i>
+                            <div class="text">
+                                <span id="humidity">45%</span>
+                                <p>Kelembapan</p>
+                            </div>
+                        </div>
+
+                        <div class="wind">
+                            <i class="fa-solid fa-wind"></i>
+                            <div class="text">
+                                <span id="wind-speed">12Km/H</span>
+                                <p>Kecepatan Angin</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn"><a href="/revisi web/hi weather/index.html">Lihat selengkapnya</a></button>
+        </div>
+
+
+        <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/595a890311.js" crossorigin="anonymous" src="https://kit.fontawesome.com/your-font-awesome-key.js" crossorigin="anonymous"></script>
+        <script>
+            function goBack() {
+                window.history.back();
+            }
+        </script>
+        </script>
+    </body>
+
+</html>

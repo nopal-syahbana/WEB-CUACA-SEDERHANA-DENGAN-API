@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+    <script src="/bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="/JQuery/Jquery.js"></script>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="box">
+            <div class="logo">
+                <img src="/Front_END/image/LOGO/HI Weather short.svg" alt="">
+            </div>
+
+            <div class="color-box">
+                <div class="textpage">
+                    <p>GET YOUR WEATHER INFO.</p>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="search">
+                    <input type="text" placeholder="mencari lokasimu?">
+                    <button style="background-image:url(/Front_END/image/ICON/search\ button.png);"></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+    $(document).ready(function() {
+        $('button').click(function() {
+            $(".textpage").css("fontSize", "100px", "color", "red");
+        });
+    });
+</script>
+
+</html>

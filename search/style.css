@@ -1,0 +1,90 @@
+body {
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #d8d8d8, #ffffff);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+}
+
+.color-box {
+    width: 700px;
+    height: 420px;
+    background: linear-gradient(to top right, #cccccc, #dadada, #ffffff, #ffffff);
+    border-radius: 20px;
+}
+
+.textpage {
+    text-align: right;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 55px;
+    width: 277px;
+    height: 121px;
+    font-weight: 700px;
+    font-style: normal;
+    line-height: 58px;
+    display: flex;
+    margin-left: 375px;
+    padding-top: 55px;
+}
+
+.search {
+    display: inline-flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    padding-top: 100px;
+}
+
+.search input {
+    width: 400px;
+    height: 52px;
+    outline: 0px;
+    border: 0px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.search button {
+    background-repeat: no-repeat;
+    height: 52px;
+    width: 52px;
+    background-image: url(/Front_END/image/ICON/search\ button.png);
+    outline: 0px;
+    border: 0px;
+    margin-left: 5px;
+    display: flex;
+}
+
+.logo {
+    justify-content: right;
+    display: flex;
+}
+
+@media only screen and (max-width: 800px) {
+    .main {
+        width: 100%;
+        height: auto;
+        margin-top: 150px;
+    }
+    .color-box {
+        width: 350px;
+    }
+    .logo {
+        width: 50pxpx;
+        display: flex;
+        justify-content: right;
+    }
+    .textpage {
+        width: 50px;
+        margin-left: 125px;
+        text-align: right;
+        display: flex;
+    }
+    .search input {
+        width: 285px;
+    }
+}

@@ -1,0 +1,21 @@
+body {
+    background-image: url(/image/BG/bg\ awal.png);
+}
+
+div.boxawal {
+    position: absolute;
+    width: 897px;
+    height: 561px;
+    left: 511px;
+    top: 259px;
+    background: url(/image/BG/box\ awal.png);
+}
+
+div.logo {
+    position: absolute;
+    width: 89px;
+    height: 37px;
+    left: 1216px;
+    top: 247px;
+    background: url(/image/LOGO/HI\ Weather\ short.svg);
+}

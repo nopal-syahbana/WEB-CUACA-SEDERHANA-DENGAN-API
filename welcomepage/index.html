@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+    <script src="/bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="/JQuery/Jquery.js"></script>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="box">
+
+            <div class="color-box">
+                <div class="logo">
+                    <img src="/revisi web/Front_END/image/LOGO/HI Weather long.svg" alt="">
+                </div>
+
+
+                <h1>SELAMAT DATANG.</h1>
+                <div class="textpage
+                ">
+                    <p>Hi Weather merupakan web berbasis HTML, CSS & Javascript <br> yang mempunyai fitur untuk menunjukkan cuaca secara realtime <br> dengan ditampilkan secara cepat dan secara detail</p>
+                </div>
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="enter" id="btn">
+                    <button><a href="/revisi web/reference weather/index.html">Let's Get Started </a></button>
+
+                </div>
+                <div class="png" id="city">
+                    <img src="/revisi web/AWAL/city.png" alt="" srcset="">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+    $(document).ready(function() {
+        $("#btn").click(function() {
+            $("#city").slideDown("slow");
+        });
+    });
+</script>
+
+</html>

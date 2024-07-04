@@ -1,0 +1,107 @@
+body {
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #d8d8d8, #ffffff);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+div {
+    flex-basis: 0%;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.color-box {
+    width: 1700px;
+    height: 900px;
+    background: linear-gradient(to top right, #cccccc, #dadada, #ffffff, #ffffff);
+    border-radius: 20px;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 90px;
+    font-weight: 700%;
+    text-align: center;
+    padding-top: 60px;
+}
+
+p {
+    text-align: center;
+    font-family: 'gotham';
+    font-size: 20px;
+    height: 121px;
+    font-weight: 700px;
+    font-style: normal;
+    padding-top: 55px;
+}
+
+.logo {
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+    padding-top: 40px;
+}
+
+.enter {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    padding-top: 10px;
+}
+
+/* .tempelankata {} */
+
+button {
+    border-radius: 20px;
+    width: 300px;
+    font-size: 22px;
+    font-stretch: condensed;
+    background-color: coral;
+    color: #ffffff;
+    outline: 0;
+    border: 0;
+}
+
+.png {
+    padding-top: 30px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+        width: 100%;
+        height: auto;
+        flex-wrap: nowrap;
+    }
+    div {
+        flex-basis: 40%;
+    }
+    .color-box {
+        width: 100%;
+        height: auto;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    h1 {
+        font-size: 50px;
+        width: 70%;
+        padding-left: 200px;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
+    p {
+        font-size: 16px;
+        padding-top: 10%;
+    }
+}

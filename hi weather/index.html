@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>Hi Weather</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="web-container">
+        <div class="web-web">
+          <img
+            src="public/external/rectangle222092-m1yd-1000h.png"
+            alt="Rectangle222092"
+            class="web-rectangle22"
+          />
+          <img
+            src="public/external/sizewindows1314-opqe-1800w.png"
+            alt="SizeWindows1314"
+            class="web-size-windows"
+          />
+          <img
+            src="public/external/rectangle202094-iqd-2000w.png"
+            alt="Rectangle202094"
+            class="web-rectangle20"
+          />
+          <img
+            src="public/external/rectangle3920-lgy-200h.png"
+            alt="Rectangle3920"
+            class="web-rectangle3"
+          />
+          <img
+            src="public/external/rectangle212098-1imf-200h.png"
+            alt="Rectangle212098"
+            class="web-rectangle21"
+          />
+          <span class="web-text"><span>Gresik, Jawa Timur</span></span>
+          <span class="web-text002"><span>0C</span></span>
+          <span class="web-text004"><span>30</span></span>
+          <img
+            src="public/external/rectangle164216-y14a-200h.png"
+            alt="Rectangle164216"
+            class="web-rectangle16"
+          />
+          <img
+            src="public/external/rectangle174216-vbq0b-200h.png"
+            alt="Rectangle174216"
+            class="web-rectangle17"
+          />
+          <img
+            src="public/external/rectangle184218-ciqs-200h.png"
+            alt="Rectangle184218"
+            class="web-rectangle18"
+          />
+          <span class="web-text006"><span>Cloud pct</span></span>
+          <span class="web-text008"><span>5%</span></span>
+          <span class="web-text010"><span>91%</span></span>
+          <span class="web-text012"><span>74°</span></span>
+          <span class="web-text014"><span>1.79 km/h</span></span>
+          <span class="web-text016"><span>Humidity</span></span>
+          <span class="web-text018"><span>Win deg</span></span>
+          <span class="web-text020"><span>Cuaca Gresik hari ini</span></span>
+          <span class="web-text022">
+            <span>Today forcast for Gresik, Indonesia</span>
+          </span>
+          <div class="web-group2">
+            <span class="web-text024"><span>Cuaca Besok</span></span>
+            <span class="web-text026"><span>8:00 pm</span></span>
+            <span class="web-text028"><span>°C</span></span>
+            <span class="web-text030"><span>24</span></span>
+            <img
+              src="public/external/rectangle79100-eea-200h.png"
+              alt="Rectangle79100"
+              class="web-rectangle7"
+            />
+            <span class="web-text032"><span>Berawan</span></span>
+            <span class="web-text034">
+              <span>5% kemungkinan akan hujan pada 1 pm</span>
+            </span>
+          </div>
+          <span class="web-text036"><span>Cerah</span></span>
+          <span class="web-text038"><span>Morning</span></span>
+          <span class="web-text040"><span>Afternoon</span></span>
+          <span class="web-text042"><span>Midnight</span></span>
+          <a href="/revisi web/reference weather/index.html">
+            <img
+              src="public/external/hiweatherlong12160-ojir-200h.png"
+              alt="HIWeatherlong12160"
+              id="Home"
+              class="web-h-weatherlong1"
+            />
+          </a>
+          
+          <div class="web-group3">
+            <img
+              src="public/external/pagi12123-6x87n-200h.png"
+              alt="pagi12123"
+              class="web-pagi1"
+            />
+            <img
+              src="public/external/siang12123-7rk-200h.png"
+              alt="siang12123"
+              class="web-siang1"
+            />
+            <img
+              src="public/external/sore12124-db6-200h.png"
+              alt="sore12124"
+              class="web-sore1"
+            />
+            <img
+              src="public/external/malam12124-dfl1-200h.png"
+              alt="malam12124"
+              class="web-malam1"
+            />
+          </div>
+          <span class="web-text044"><span>°C</span></span>
+          <span class="web-text046"><span>19</span></span>
+          <span class="web-text048"><span>°C</span></span>
+          <span class="web-text050"><span>28</span></span>
+          <span class="web-text052"><span>°C</span></span>
+          <span class="web-text054"><span>26</span></span>
+          <span class="web-text056"><span>°C</span></span>
+          <span class="web-text058"><span>20</span></span>
+          <img
+            src="public/external/rectangle194218-vdhb-200h.png"
+            alt="Rectangle194218"
+            class="web-rectangle19"
+          />
+          <span class="web-text060"><span>Win speed</span></span>
+          <img
+            src="public/external/cerahicon2854-8xsh-400h.png"
+            alt="cerahicon2854"
+            class="web-cerahicon2"
+          />
+          <a href="#Home" class="web-text062"><span>Home</span></a>
+          <a href="#NEWS" class="web-text064"><span>News</span></a>
+          <a href="#About US" class="web-text066"><span>About US</span></a>
+          <div class="web-group21">
+            <div class="web-group1">
+              <img
+                src="public/external/rectangle162098-e502-200h.png"
+                alt="Rectangle162098"
+                class="web-rectangle161"
+              />
+              <img
+                src="public/external/rectangle172099-qbx5i-200h.png"
+                alt="Rectangle172099"
+                class="web-rectangle171"
+              />
+              <img
+                src="public/external/rectangle182091-33nd-200h.png"
+                alt="Rectangle182091"
+                class="web-rectangle181"
+              />
+              <img
+                src="public/external/rectangle192091-w219-200h.png"
+                alt="Rectangle192091"
+                class="web-rectangle191"
+              />
+            </div>
+          </div>
+          <div class="web-group4">
+            <img
+              src="public/external/image202091-8cqd-400h.png"
+              alt="image202091"
+              class="web-image20"
+            />
+            <span class="web-text068">
+              <span>
+                Wonderful Indonesia is our commitment to promote various
+                destinations in the archipelago for domestic and international
+                tourism.
+              </span>
+            </span>
+            <span class="web-text070">
+              <span>
+                <span>WONDERLAND</span>
+                <br />
+                <span>INDONESIA</span>
+              </span>
+            </span>
+          </div>
+          <div class="web-ranu-kumbolo">
+            <div class="web-frame43">
+              <div class="web-frame44">
+                <div class="web-frame42">
+                  <span class="web-text075"><span>RANU KUMBOLO</span></span>
+                </div>
+                <span class="web-text077">
+                  <span>MT. Semeru, East Java</span>
+                </span>
+                <a
+                  href="https://www.nativeindonesia.com/ranu-kumbolo/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="web-text079"
+                >
+                  <span>Read More</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="web-ranu-kumbolo1">
+            <div class="web-frame4301">
+              <div class="web-frame4401">
+                <div class="web-frame4201">
+                  <span class="web-text081"><span>PANTAI MAWUN</span></span>
+                </div>
+                <span class="web-text083"><span>Lombok Island</span></span>
+                <a
+                  href="https://indonesiakaya.com/pustaka-indonesia/indah-dan-eloknya-pantai-mawun/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="web-text085"
+                >
+                  <span>Read More</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="web-ranu-kumbolo2">
+            <div class="web-frame4302">
+              <div class="web-frame4402">
+                <div class="web-frame4202">
+                  <span class="web-text087"><span>STONE FOREST</span></span>
+                </div>
+                <span class="web-text089"><span>South Sulawesi</span></span>
+                <a
+                  href="https://kareba-toraja.com/suka-wisata-susur-hutan-stone-forest-tangrante-toraja-menanti-anda/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="web-text091"
+                >
+                  <span>Read More</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="web-ranu-kumbolo3">
+            <div class="web-frame4303">
+              <div class="web-frame4403">
+                <div class="web-frame4203">
+                  <span class="web-text093"><span>KAWAH IJEN</span></span>
+                </div>
+                <span class="web-text095">
+                  <span>Banyuwangi, East Java</span>
+                </span>
+                <a
+                  href="https://www.exploreijen.com/2021/05/wisata-kawah-gunung-ijen.html"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="web-text097"
+                >
+                  <span>Read More</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="web-ranu-kumbolo4">
+            <div class="web-frame4304">
+              <div class="web-frame4404">
+                <div class="web-frame4204">
+                  <span class="web-text099">
+                    <span>AIR TERJUN TIU KELEP</span>
+                  </span>
+                </div>
+                <span class="web-text101"><span>Lombok Island</span></span>
+                <a
+                  href="https://www.tempatwisata.pro/category/danau"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="web-text103"
+                >
+                  <span>Read More</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <span class="web-text105">
+            <span>Hari yang cerah, Berikut rekomendasi kami</span>
+          </span>
+          <div class="web-raja-ampat">
+            <div class="web-frame4305">
+              <div class="web-frame4405">
+                <div class="web-frame4205">
+                  <span class="web-text107"><span>RAJA AMPAT</span></span>
+                </div>
+                <span class="web-text109">
+                  <span>Sorong, Southeast Papua</span>
+                </span>
+                <a
+                  href="https://indonesiakaya.com/pustaka-indonesia/raja-ampat-surga-petualangan-dunia-di-ujung-papua/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="web-text111"
+                >
+                  <span>Read More</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="web-pantaikuta">
+            <div class="web-frame4306">
+              <div class="web-frame4406">
+                <div class="web-frame4206">
+                  <span class="web-text113"><span>PANTAI KUTA</span></span>
+                </div>
+                <span class="web-text115"><span>Bali Island</span></span>
+                <a
+                  href="https://indonesiakaya.com/pustaka-indonesia/pantai-kuta-simbol-pariwisata-pulau-dewata/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="web-text117"
+                >
+                  <span>Read More</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="web-tangkuban-perahu">
+            <div class="web-frame4307">
+              <div class="web-frame4407">
+                <div class="web-frame4207">
+                  <span class="web-text119"><span>TANGKUBAN PERAHU</span></span>
+                </div>
+                <span class="web-text121"><span>Bandung, West Java</span></span>
+                <a
+                  href="https://www.indonesia.travel/id/id/ide-liburan/5-aktivitas-seru-bersama-keluarga-di-tangkuban-perahu"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="web-text123"
+                >
+                  <span>Read More</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="web-frame88">
+            <div class="web-frame89"></div>
+            <span id="NEWS" class="web-text125"><span>News</span></span>
+            <div class="web-frame60">
+              <div class="web-frame57">
+                <div class="web-frame61">
+                  <div class="web-frame31">
+                    <img
+                      src="public/external/bytesizeheart2092-kbv.svg"
+                      alt="bytesizeheart2092"
+                      class="web-bytesizeheart"
+                    />
+                    <img
+                      src="public/external/image192092-9yas-600w.png"
+                      alt="image192092"
+                      class="web-image19"
+                    />
+                  </div>
+                  <div class="web-frame4308">
+                    <div class="web-frame59">
+                      <div class="web-frame56">
+                        <div class="web-frame4408">
+                          <div class="web-frame4208">
+                            <span class="web-text127">
+                              <span>
+                                Eropa Dilanda Gelombang Panas, Apakah Aman
+                                Liburan ke Sana?
+                              </span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="web-frame50">
+                        <a
+                          href="https://www.msn.com/id-id/berita/other/eropa-dilanda-gelombang-panas-apakah-aman-liburan-ke-sana/ar-AA1e1sUw?ocid=msedgdhphdr&amp;cvid=0e7de98fc5fd4b5dafd47caefae5364e&amp;ei=22"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                          class="web-text129"
+                        >
+                          <span>Read More</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="web-frame58"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="web-frame581">
+                <div class="web-frame611">
+                  <div class="web-frame311">
+                    <img
+                      src="public/external/bytesizeheart2183-cuqc.svg"
+                      alt="bytesizeheart2183"
+                      class="web-bytesizeheart1"
+                    />
+                    <img
+                      src="public/external/image192183-uwrg-600w.png"
+                      alt="image192183"
+                      class="web-image191"
+                    />
+                  </div>
+                  <div class="web-frame4309">
+                    <div class="web-frame591">
+                      <div class="web-frame561">
+                        <div class="web-frame4409">
+                          <div class="web-frame4209">
+                            <span class="web-text131">
+                              <span>
+                                China Catat Rekor Suhu Tertinggi, Capai 52,2
+                                Derajat Celsius
+                              </span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="web-frame501">
+                        <a
+                          href="https://www.msn.com/id-id/berita/other/china-catat-rekor-suhu-tertinggi-capai-52-2-derajat-celsius/ar-AA1e1gxc?ocid=msedgdhphdr&amp;cvid=0e7de98fc5fd4b5dafd47caefae5364e&amp;ei=25"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                          class="web-text133"
+                        >
+                          <span>Read More</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="web-frame582"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="web-frame592">
+            <div class="web-frame612">
+              <div class="web-frame312">
+                <img
+                  src="public/external/bytesizeheart2184-58th.svg"
+                  alt="bytesizeheart2184"
+                  class="web-bytesizeheart2"
+                />
+                <img
+                  src="public/external/image192184-6k9p-500w.png"
+                  alt="image192184"
+                  class="web-image192"
+                />
+              </div>
+              <div class="web-frame4310">
+                <div class="web-frame593">
+                  <div class="web-frame562">
+                    <div class="web-frame4410">
+                      <div class="web-frame4210">
+                        <span class="web-text135">
+                          <span>
+                            Kesadaran Warga Jayapura Terhadap Bahaya Tsunami
+                            Masih Rendah
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="web-frame502">
+                    <a
+                      href="https://www.msn.com/id-id/berita/other/bmkg-kesadaran-warga-jayapura-terhadap-bahaya-tsunami-masih-rendah/ar-AA1e0MT7?ocid=msedgdhphdr&amp;cvid=0e7de98fc5fd4b5dafd47caefae5364e&amp;ei=28"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="web-text137"
+                    >
+                      <span>Read More</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="web-frame583"></div>
+              </div>
+            </div>
+          </div>
+          <div class="web-frame601">
+            <div class="web-frame613">
+              <div class="web-frame313">
+                <img
+                  src="public/external/bytesizeheart2186-pq7x.svg"
+                  alt="bytesizeheart2186"
+                  class="web-bytesizeheart3"
+                />
+                <img
+                  src="public/external/image192186-hj2-500w.png"
+                  alt="image192186"
+                  class="web-image193"
+                />
+              </div>
+              <div class="web-frame4311">
+                <div class="web-frame594">
+                  <div class="web-frame563">
+                    <div class="web-frame4411">
+                      <div class="web-frame4211">
+                        <span class="web-text139">
+                          <span>
+                            Panas Ekstrem Buat Jumlah Turis ke Eropa Selatan
+                            Menurun
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="web-frame503">
+                    <a
+                      href="https://www.msn.com/id-id/berita/dunia/panas-ekstrem-buat-jumlah-turis-ke-eropa-selatan-menurun-ini-alternatifnya/ar-AA1e13en?ocid=msedgdhphdr&amp;cvid=0e7de98fc5fd4b5dafd47caefae5364e&amp;ei=26"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="web-text141"
+                    >
+                      <span>Read More</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="web-frame584"></div>
+              </div>
+            </div>
+          </div>
+          <div class="web-footer">
+            <span class="web-text143">
+              <span>© Copyright Hi Weather 2023 All rights reserved</span>
+            </span>
+          </div>
+          <div class="web-instagram">
+            <div class="web-group">
+              <a
+                href="https://instagram.com/unmuhgresik?igshid=MzRlODBiNWFlZA=="
+                target="_blank"
+                rel="noreferrer noopener"
+                class="web-link"
+              >
+                <img
+                  src="public/external/vectori209-vwys.svg"
+                  alt="VectorI209"
+                  class="web-vector"
+                />
+              </a>
+            </div>
+          </div>
+          <a
+            href="https://www.facebook.com/UniversitasMuhammadiyahGresik?mibextid=ZbWKwL"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="web-link1"
+          >
+            <img
+              src="public/external/facebook2092-h9jh.svg"
+              alt="facebook2092"
+              class="web-facebook"
+            />
+          </a>
+          <img
+            src="public/external/logopuith12151-bcwf-200h.png"
+            alt="logopuith12151"
+            id="About US"
+            class="web-logopuith1"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
